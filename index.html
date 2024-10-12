@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subdomain Takeover by Mr. Kevin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* White background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #2c3e50; /* Dark blue background for contrast */
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #ecf0f1; /* Light color for heading for clear visibility */
+            font-size: 36px;
+        }
+        p {
+            color: #bdc3c7; /* Softer gray color for paragraph text */
+            font-size: 18px;
+        }
+        button {
+            background-color: #2980b9; /* Blue button for contrast */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #1f6391; /* Darker blue on hover */
+        }
+        #extraInfo {
+            color: #f1c40f; /* Bright yellow for extra information text */
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Subdomain Taken Over by Mr. Kevin</h1>
+        <p>This subdomain is now under the control of Mr. Kevin.</p>
+        <button onclick="showMessage()">Click for More Info</button>
+        <p id="extraInfo" style="display: none;">As a security expert, Mr. Kevin's aim is to enhance cybersecurity by identifying vulnerabilities, protecting systems, and ensuring the digital space is secure for all users.</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            var info = document.getElementById('extraInfo');
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
